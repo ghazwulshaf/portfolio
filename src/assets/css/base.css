@@ -1,16 +1,5 @@
 /* color palette */
 :root {
-    --primary-900: #1F0E33;
-    --primary-800: #3E1C66;
-    --primary-700: #5E2999;
-    --primary-600: #7D37CC;
-    --primary-500: #9C45FF;
-    --primary-400: #B06AFF;
-    --primary-300: #C48FFF;
-    --primary-200: #D7B5FF;
-    --primary-100: #EBDAFF;
-    --primary-50: #F5ECFF;
-
     --neutral-900: #000000;
     --neutral-800: #0D0D0D;
     --neutral-700: #1C1C1C;
@@ -30,6 +19,28 @@
     --neutral-20: #F5F5F5;
     --neutral-10: #FAFAFA;
     --neutral-0: #FFFFFF;
+
+    --primary-900: #1F0E33;
+    --primary-800: #3E1C66;
+    --primary-700: #5E2999;
+    --primary-600: #7D37CC;
+    --primary-500: #9C45FF;
+    --primary-400: #B06AFF;
+    --primary-300: #C48FFF;
+    --primary-200: #D7B5FF;
+    --primary-100: #EBDAFF;
+    --primary-50: #F5ECFF;
+
+    --surface-white: #FFFFFF;
+    --surface-white-hover: #F9F5FD;
+    --surface-white-active: #ECE0F9;
+    --surface-light: #F9F5FD;
+    --surface-light-hover: #ECE0F9;
+    --surface-light-active: #E1CEF6;
+    --surface-normal: #F3EBFB;
+    --surface-normal-hover: #E4D4F7;
+    --surface-normal-active: #D6BCF3;
+    --surface-dark: #EDE2FA;
 
     --f-weight-reguler: 400;
     --f-weight-medium: 500;
@@ -59,14 +70,23 @@
 
 /* semantic color variables for this project */
 :root {
+    --color-white: var(--neutral-0);
+
     --color-primary: var(--primary-500);
+    --color-primary-hover: var(--primary-600);
+
     --color-light: var(--primary-100);
+
     --color-dark: var(--primary-900);
 
     --color-background: var(--neutral-0);
 
     --color-text: var(--primary-900);
     --color-text-active: var(--primary-500);
+
+    --input-background: var(--surface-light);
+    --input-background-hover: var(--surface-normal);
+    --input-background-focus: var(--surface-dark);
 }
 
 *,
@@ -81,7 +101,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url(./fonts/Poppins-Regular.ttf);
+    src: url(../fonts/Poppins-Regular.ttf);
 }
 
 body {
@@ -94,4 +114,38 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/* Components */
+
+.button, .button-md {
+    padding: 12px 24px;
+    font-size: var(--f-body-md);
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 12px;
+}
+
+.button:hover, .button-md:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-hover);
+}
+
+.input-email, .input-email-md {
+    padding: 12px 24px;
+    font-size: var(--f-body-md);
+    color: var(--color-text);
+    background-color: var(--input-background);
+    border: none;
+    border-radius: 12px;
+}
+
+.input-email:hover, .input-email-md:hover {
+    background-color: var(--input-background-hover);
+}
+
+.input-email:focus, .input-email-md:focus {
+    outline: none;
+    background-color: var(--input-background-focus);
 }
