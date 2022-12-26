@@ -9,7 +9,7 @@ import '/src/assets/css/contents/home.css'
     </div>
 
     <form action="#" class="content__form">
-        <input type="email" name="email" id="email" class="input-email form__email" placeholder="Email adress..">
+        <input type="email" name="email" id="email" class="input-email form__email" placeholder="Email address..">
         <button type="submit" class="button form__submit">Connect With Me</button>
     </form>
 </template>
