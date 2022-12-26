@@ -43,7 +43,6 @@
 .nav__item a:hover {
     color: var(--color-primary);
     font-weight: var(--f-weight-medium);
-    transition: color .300s;
 }
 
 .nav__item.active a {
@@ -75,5 +74,4 @@
 
 .icon__item a:hover {
     color: var(--color-primary);
-    transition: color .300s;
 }
