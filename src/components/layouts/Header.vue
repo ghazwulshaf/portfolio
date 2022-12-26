@@ -1,5 +1,5 @@
 <script setup>
-import '/src/assets/layouts/header.css'
+import '/src/assets/css/layouts/header.css'
 </script>
 
 <template>
