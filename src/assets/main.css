@@ -1,0 +1,20 @@
+@import './base.css';
+
+body {
+    padding: 0 80px;
+}
+
+h1 {
+    font-size: var(--f-headline-lg);
+    font-weight: var(--f-weight-bold);
+}
+
+h2 {
+    font-size: var(--f-headline-md);
+    font-weight: var(--f-weight-bold);
+}
+
+h3 {
+    font-size: var(--f-headline-sm);
+    font-weight: var(--f-weight-semi-bold);
+}
