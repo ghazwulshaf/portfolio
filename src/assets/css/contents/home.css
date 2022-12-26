@@ -1,0 +1,30 @@
+.content__text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 360px;
+}
+
+.text__title {
+    text-transform: uppercase;
+}
+
+.content__form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__email {
+    width: 360px;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.form__submit {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
