@@ -6,7 +6,7 @@ import Content from './components/contents/Home.vue'
 <template>
     <Header class="header"/>
 
-    <main>
+    <main class="main">
         <Content />
     </main>
 </template>
