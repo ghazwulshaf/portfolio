@@ -5,7 +5,7 @@ import '/src/assets/css/layouts/header.css'
 <template>
     <header class="header">
         <div class="header__logo">
-            <img src="/src/assets/logo_48.svg" alt="logo" width="22">
+            <img class="logo__image" src="/src/assets/logo_48.svg" alt="logo">
             <span class="logo__title">Ghazwul</span>
         </div>
         <ul class="header__nav">

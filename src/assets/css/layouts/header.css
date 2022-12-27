@@ -8,13 +8,17 @@
 .header__logo {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 8px;
     align-items: center;
+}
+
+.logo__image {
+    width: var(--f-title-lg);
 }
 
 .logo__title {
     text-transform: uppercase;
-    font-size: var(--f-title-lg);
+    font-size: var(--f-body-lg);
     font-weight: var(--f-weight-medium);
 }
 
