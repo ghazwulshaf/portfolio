@@ -1,5 +1,19 @@
+.content::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: -40px;
+    right: 0;
+    width: 720px;
+    height: 480px;
+    background-image: url(/src/assets/undraw_coding.svg);
+    background-repeat: no-repeat;
+    background-size: 720px;
+    /* background-position: 500px 0; */
+}
+
 .content__text {
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
